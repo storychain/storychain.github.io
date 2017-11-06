@@ -1,10 +1,26 @@
-import { h } from 'preact';
+import { h, Component } from 'preact';
+import { Cell, Grid, Layout, LayoutContent } from 'preact-mdl';
+import 'material-design-lite/material';
 import Router from 'preact-router';
 
-const App = () => (
-  <Router>
-    <div>Storychain</div>
-  </Router>
-);
+import Header from './components/Header';
+import Home from './views/Home';
 
-export default App;
+export default class App extends Component {
+  render() {
+    return (
+      <Layout fixed-header>
+        <Header />
+        <LayoutContent>
+          <Grid>
+            <Cell>
+              <Router>
+                <Home path="/" />
+              </Router>
+            </Cell>
+          </Grid>
+        </LayoutContent>
+      </Layout>
+    );
+  }
+}
