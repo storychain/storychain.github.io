@@ -1,0 +1,35 @@
+{
+  "name": "storychain",
+  "version": "0.0.1",
+  "description": "Create a chain of stories made by you and others.",
+  "main": "index.js",
+  "contributors": [
+    "Ben Budnevich <ben.bj32001@gmail.com>",
+    "Menglin 'Mark Xu' <mark@remarkablemark.org>"
+  ],
+  "scripts": {
+    "start": "preact-scripts start",
+    "build": "preact-scripts build",
+    "eject": "preact-scripts eject",
+    "test": "preact-scripts test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/storychain/storychain.github.io"
+  },
+  "bugs": {
+    "url": "https://github.com/storychain/storychain.github.io/issues"
+  },
+  "dependencies": {
+    "preact": "^8.2.6",
+    "preact-compat": "^3.17.0",
+    "preact-router": "^2.5.7"
+  },
+  "devDependencies": {
+    "preact-scripts": "0.3.0-alpha"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/preact-scripts/config/eslint.js"
+  },
+  "license": "MIT"
+}
