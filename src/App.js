@@ -5,6 +5,7 @@ import Router from 'preact-router';
 
 import Header from './components/Header';
 import Home from './views/Home';
+import Read from './views/Read';
 import Sidebar from './components/Sidebar';
 
 export default class App extends Component {
@@ -18,6 +19,7 @@ export default class App extends Component {
             <Cell>
               <Router>
                 <Home path="/" />
+                <Read path="/read" />
               </Router>
             </Cell>
           </Grid>
